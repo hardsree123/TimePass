@@ -1,0 +1,16 @@
+﻿<Window x:Class="MD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD"
+        mc:Ignorable="d"
+        Title="MD-WebCamView" Height="480" Width="480">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="320" Margin="10,10,0,0" VerticalAlignment="Top" Width="452">
+            <Image Name="Feed"/>
+        </Border>
+        <ComboBox Name="vdoOuterDeviceList" HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" Width="156" SelectionChanged="vdoOuterDeviceList_SelectionChanged" RenderTransformOrigin="0.629,-0.426"/>
+        <Button Content="View cam feed" HorizontalAlignment="Left" Margin="269,375,0,0" VerticalAlignment="Top" Width="127" Name="RecordOuterCamFeed" Click="RecordOuterCamFeed_Click" Height="22"/>
+    </Grid>
+</Window>
